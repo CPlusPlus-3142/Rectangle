@@ -1,4 +1,3 @@
-//#include "Rectangle_v2.h" was used in both v2 and v3
 #include "Rectangle_v3.h"
 /** created as part of version 2 to show separation of 
  * class declaration   .h file
@@ -16,7 +15,7 @@ int main() {
     Rectangle r2{3.4, 5.6}; 
     std::cout << "r1 width: " << r1.get_width() << " length: " << r1.get_length() << std::endl;
     
-    Rectangle r3=r2;
+    Rectangle r3=r2; // copy constructor called
     r3.set_length(9.9);
     // same as: Rectangle r3{r2};
     std::cout << "r2 width: " << r2.get_width() << " length: " << r2.get_length() << std::endl;
