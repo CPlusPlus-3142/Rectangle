@@ -3,12 +3,14 @@
  * It contains the class DECLARATION.
  * 
  */
-#ifndef RECTANGLE_V2_H
-#define RECTANGLE_V2_H
+#include <iostream>
+#ifndef RECTANGLE_V3_H
+#define RECTANGLE_V3_H
 class Rectangle {
     private:
         double width;
         double length;
+        void check_dimension(double dim);
     public: 
         // constructors
         // you only get a default constructor from 
@@ -19,9 +21,9 @@ class Rectangle {
         // setters and getters
         void set_width(double w);
         void set_length(double l);
-        double get_width();
-        double get_length();
+        double get_width() const;
+        double get_length() const;
         void set_values(double w, double l);
-        double area();
+        double area() const;
 }; 
 #endif

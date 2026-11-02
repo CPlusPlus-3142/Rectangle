@@ -17,10 +17,8 @@ class Rectangle {
         double width;
         double length;
     public: 
-    
-        Rectangle() { width=0; length=0; } // default constructor - no arguments
 
-        
+        Rectangle() { width=0; length=0; } // default constructor - no arguments
         //Rectangle(double w, double l); // parameterized constructor
         // setters and getters
         void set_width(double w) {
